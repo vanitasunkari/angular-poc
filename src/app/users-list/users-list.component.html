@@ -1,0 +1,7 @@
+<div infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300" (scrolled)="onScroll()"></div>
+<ul class="users">
+  <li *ngFor="let user of users">
+    <div ><span class="badge">{{user.id}}</span> {{user.name}}
+    </div></li>
+</ul>
+</div>
