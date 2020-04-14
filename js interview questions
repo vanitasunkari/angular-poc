@@ -1,0 +1,44 @@
+i/p[1,5,2,1,5,2,3,5,5,1] ... o/p [1, 2, 3, 5, 1, 2, 5, 1, 5, 5]
+
+
+answer..
+ 
+
+
+//[1,5,2,1,5,2,3,5,5,1] 
+//[1,2,3,5] //[1,1,2,5,5] //[1,2,5][1,5]
+
+//1.removing duplicates from array and store it one arr
+//2.will do recurssion with new array.
+//end will concat result
+
+//
+function removeDuplicates(arr)
+{
+  let newArr =[],unique={},tempArr=[];
+ // newArr = arr.filter((item,index) => arr.indexOf(item) === index);//[1,2,3,5]
+  if(arr.length===0) return;
+  arr.forEach(function(i)//[1,1,2,5,5]
+               {
+    if(!unique[i])
+      {
+        unique[i] = true;
+        tempArr.push(i);
+        //[1,2,3,5][1,2,5]
+      }
+    else
+      {
+        newArr.push(i);
+        
+      }
+  }) ;
+  tempArr.sort();
+  if(newArr.length!=0)//[1,1,2,5,5]
+    {
+      //newArr.
+    tempArr =  tempArr.concat(removeDuplicates(newArr));
+    }
+  return tempArr;//[1,5]
+}
+
+console.log(removeDuplicates([1,5,2,1,5,2,3,5,5,1]));
