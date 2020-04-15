@@ -1,44 +1,16 @@
+servicenow---> 
 i/p[1,5,2,1,5,2,3,5,5,1] ... o/p [1, 2, 3, 5, 1, 2, 5, 1, 5, 5]
 
 
 answer..
- 
+ https://codepen.io/vsunkari/pen/abvdogj?editors=1111
 
+****************************************************
+ http://collabedit.com/64sqb 
+ 1.two sum array.
+ 2.i/p [1,0,1,1,1,0,0,0]-->o/p[0,0,0,0,1,1,1,1] --->one solution --// if(a[i] >a[i+1]) ... temp = a[i]...a[i]=a[i+1] and a[i+1]=temp;
+ 3.
+ ************************************
+ elevator design
+ https://jsbin.com/sagurun/1/edit?html,js,console,output
 
-//[1,5,2,1,5,2,3,5,5,1] 
-//[1,2,3,5] //[1,1,2,5,5] //[1,2,5][1,5]
-
-//1.removing duplicates from array and store it one arr
-//2.will do recurssion with new array.
-//end will concat result
-
-//
-function removeDuplicates(arr)
-{
-  let newArr =[],unique={},tempArr=[];
- // newArr = arr.filter((item,index) => arr.indexOf(item) === index);//[1,2,3,5]
-  if(arr.length===0) return;
-  arr.forEach(function(i)//[1,1,2,5,5]
-               {
-    if(!unique[i])
-      {
-        unique[i] = true;
-        tempArr.push(i);
-        //[1,2,3,5][1,2,5]
-      }
-    else
-      {
-        newArr.push(i);
-        
-      }
-  }) ;
-  tempArr.sort();
-  if(newArr.length!=0)//[1,1,2,5,5]
-    {
-      //newArr.
-    tempArr =  tempArr.concat(removeDuplicates(newArr));
-    }
-  return tempArr;//[1,5]
-}
-
-console.log(removeDuplicates([1,5,2,1,5,2,3,5,5,1]));
