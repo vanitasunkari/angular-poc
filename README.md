@@ -1,27 +1,47 @@
-# AngularPoc
+# Whats this about.
+This is to collect all the topics / interview questions related to the Web development ( Vanilla JS, Angular, React etc etc) and provide one-liner answers to the most topics/interview questions.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+# Format for creating the content.
+- Question
+- One-liner answer
+- More explaination (if required)
+- Stackblitz link for a practical example and use cases.
+- Any blog/stackoverflow etc etc reference that has concrete information 
 
-## Development server
+# Want to dump questions quickly and answer later on ?
+- Use the __DRAFT.md_ to dump questions quickly and address them later.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Topics to cover
 
-## Code scaffolding
+Each .md file is broad topic classification. Put content appropriately :) .
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Topics Pending to cover
+## JavaScript
+- JavaScript Basics
+- Object Oriented JavaScript
+- ES6
+- JavaScript Tricky Questions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Angular JS (1.x)
 
-## Running unit tests
+## Angular (2+ Upto 6)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Mobile first approach
 
-## Running end-to-end tests
+## Test Driven Development
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Behavior-Driven Development
 
-## Further help
+## TDD vs BDD
+https://blog.testlodge.com/tdd-vs-bdd/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Useful Links:
+https://www.geeksforgeeks.org/how-can-one-become-good-at-data-structures-and-algorithms-easily/
+
+https://www.geeksforgeeks.org/binary-search-in-javascript/
+
+https://learn.freecodecamp.org/
+
+https://www.youtube.com/watch?v=t2CEgPsws3U
