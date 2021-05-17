@@ -130,6 +130,45 @@ for (var i = 0; i < arr.length; i++) {
 Now prints 0, 10; 1, 12; ............
 https://medium.com/coderbyte/a-tricky-javascript-interview-question-asked-by-google-and-amazon-48d212890703
 
+
+///
+mul(1,2,3)=> mul(1)(2)(3)--->currying 
+
+function multiply(a, b, c) {
+
+    return a * b * c;
+}
+
+function curry(func) {
+
+  return function curried(...args) {
+
+    console.log(args);
+
+    if (args.length >= func.length) {
+
+      return func.apply(this, args);
+    } else {
+
+      console.log('calling else');
+
+      return function(...args2) {
+        
+        return curried.apply(this, args.concat(args2));
+      }
+    }
+  };
+}
+
+let curried = curry(multiply);
+
+console.log(curried(1, 2, 3));  
+console.log(curried(1)(2, 3));   
+console.log(curried(1)(2)(3));  vs
+
+
+////
+
 Find the sum of the digits
 I have a alpha-numeric string var str = 'abc1234def-567-123'; and would like to get the sum of the numbers that are present in the string. Ex: 1234+(-567)+(-123) so on.
 
